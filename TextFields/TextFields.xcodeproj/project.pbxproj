@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41374EFF1BBC2F7800193198 /* RadomColorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41374EFE1BBC2F7800193198 /* RadomColorTextFieldDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		411577451BC09E3800DD0066 /* ZipCodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411577441BC09E3800DD0066 /* ZipCodeField.swift */; settings = {ASSET_TAGS = (); }; };
+		411577471BC09E7400DD0066 /* CashTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411577461BC09E7400DD0066 /* CashTextField.swift */; settings = {ASSET_TAGS = (); }; };
 		4D08C4701A126D0300A95F43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D08C46F1A126D0300A95F43 /* AppDelegate.swift */; };
 		4D08C4721A126D0300A95F43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D08C4711A126D0300A95F43 /* ViewController.swift */; };
 		4D08C4751A126D0300A95F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D08C4731A126D0300A95F43 /* Main.storyboard */; };
 		4D08C4771A126D0300A95F43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D08C4761A126D0300A95F43 /* Images.xcassets */; };
 		4D08C47A1A126D0300A95F43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D08C4781A126D0300A95F43 /* LaunchScreen.xib */; };
 		4D08C4861A126D0300A95F43 /* TextFieldsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D08C4851A126D0300A95F43 /* TextFieldsTests.swift */; };
-		4D08C4901A126EC400A95F43 /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D08C48F1A126EC400A95F43 /* EmojiTextFieldDelegate.swift */; };
-		4D08C4921A12860200A95F43 /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D08C4911A12860200A95F43 /* ColorizerTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		41374EFE1BBC2F7800193198 /* RadomColorTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadomColorTextFieldDelegate.swift; sourceTree = "<group>"; };
+		411577441BC09E3800DD0066 /* ZipCodeField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeField.swift; sourceTree = "<group>"; };
+		411577461BC09E7400DD0066 /* CashTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextField.swift; sourceTree = "<group>"; };
 		4D08C46A1A126D0300A95F43 /* TextFields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFields.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D08C46E1A126D0300A95F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D08C46F1A126D0300A95F43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +40,6 @@
 		4D08C47F1A126D0300A95F43 /* TextFieldsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D08C4841A126D0300A95F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D08C4851A126D0300A95F43 /* TextFieldsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsTests.swift; sourceTree = "<group>"; };
-		4D08C48F1A126EC400A95F43 /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
-		4D08C4911A12860200A95F43 /* ColorizerTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizerTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +120,8 @@
 		4D08C4951A13DA1500A95F43 /* Text Field Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				4D08C48F1A126EC400A95F43 /* EmojiTextFieldDelegate.swift */,
-				4D08C4911A12860200A95F43 /* ColorizerTextFieldDelegate.swift */,
-				41374EFE1BBC2F7800193198 /* RadomColorTextFieldDelegate.swift */,
+				411577441BC09E3800DD0066 /* ZipCodeField.swift */,
+				411577461BC09E7400DD0066 /* CashTextField.swift */,
 			);
 			name = "Text Field Delegates";
 			sourceTree = "<group>";
@@ -231,11 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D08C4921A12860200A95F43 /* ColorizerTextFieldDelegate.swift in Sources */,
+				411577471BC09E7400DD0066 /* CashTextField.swift in Sources */,
 				4D08C4721A126D0300A95F43 /* ViewController.swift in Sources */,
-				41374EFF1BBC2F7800193198 /* RadomColorTextFieldDelegate.swift in Sources */,
+				411577451BC09E3800DD0066 /* ZipCodeField.swift in Sources */,
 				4D08C4701A126D0300A95F43 /* AppDelegate.swift in Sources */,
-				4D08C4901A126EC400A95F43 /* EmojiTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

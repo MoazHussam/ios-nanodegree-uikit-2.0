@@ -14,24 +14,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
-    @IBOutlet weak var characterCountLabel: UILabel!
+    @IBOutlet weak var editLockSwitch: UISwitch!
     
     // Text Field Delegate objects
-    let emojiDelegate = EmojiTextFieldDelegate()
-    let colorizerDelegate = ColorizerTextFieldDelegate()
-    let randomColorTextFieldDelegate = RandomColorTextFieldDelegate()
+    let zipCpdeDelegate = ZipCodeField()
+    let cashDelegate = CashTextField()
     
     // Life Cycle Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // set the label to be hidden
-        self.characterCountLabel.hidden = true
         
         // Set the three delegates
-        self.textField1.delegate = emojiDelegate
-        self.textField2.delegate = randomColorTextFieldDelegate
+        self.textField1.delegate = zipCpdeDelegate
+        self.textField2.delegate = cashDelegate
         self.textField3.delegate = self
     }
 
@@ -40,18 +36,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
 
-        // Figure out what the new text will be, if we return true
-        var newText: NSString = textField.text!
-        newText = newText.stringByReplacingCharactersInRange(range, withString: string)
-        
-        // hide the label if the newText will be an empty string
-        self.characterCountLabel.hidden = (newText.length == 0)
-        
-        // Write the length of newText into the label
-        self.characterCountLabel.text = String(newText.length)
-        
-        // returning true gives the text field permission to change its text
-        return true;
+        //return the value of the flip
+        return editLockSwitch.on
     }
 }
 
