@@ -18,7 +18,7 @@ class CashTextField: NSObject, UITextFieldDelegate {
         newText = newText.stringByReplacingCharactersInRange(range, withString: string)
         
         var modifyingString: NSString = newText.stringByReplacingOccurrencesOfString("$", withString: "")
-        var stringDoubleValue = modifyingString.doubleValue
+        let stringDoubleValue = modifyingString.doubleValue
         
         
         if textField.text == "" {  // double value is 0
